@@ -1,6 +1,6 @@
 @props([
     'title',
 ])
-<h1 class="text-5xl font-bold">
+<h3 class="text-xl font-bold">
     {{ $title }}
-</h1>
+</h3>

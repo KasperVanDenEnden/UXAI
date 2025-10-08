@@ -5,7 +5,7 @@ namespace App\Actions;
 use App\Concerns\Action;
 use Illuminate\Support\Facades\DB;
 
-class BadModelActionAction implements Action
+class StoreBadDataAction implements Action
 {
     public function execute(): void
     {
