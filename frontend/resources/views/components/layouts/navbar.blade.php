@@ -19,11 +19,11 @@
             label="Test now"
             :route="route($currentMode.'.create')"
         />
+
         <x-button.a
             label="Info"
             :route="route('info')"
         />
-
         <x-switch.app />
     </div>
 </div>

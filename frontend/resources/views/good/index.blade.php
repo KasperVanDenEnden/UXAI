@@ -1,1 +1,3 @@
-<x-layouts.base>hello</x-layouts.base>
+<x-layouts.base>
+    <x-typography.h1 title="Good Index"/>
+</x-layouts.base>
