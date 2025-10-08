@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\YesNoEnum;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class BadRequest extends FormRequest
 {
@@ -14,7 +16,12 @@ class BadRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'string'],
+            'email' => ['required', 'email'],
+            'anemia' => ['required', 'string', Rule::enum(YesNoEnum::class)],
+            'stress' => ['required', 'string', Rule::enum(YesNoEnum::class)],
+            'chronic_illness' => ['required', 'string', Rule::enum(YesNoEnum::class)],
+            'family_illness' => ['required', 'string', Rule::enum(YesNoEnum::class)],
         ];
     }
 }

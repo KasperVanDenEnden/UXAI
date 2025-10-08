@@ -1,6 +1,6 @@
 @php
-    $currentMode = request()->cookie('app_mode', 'good');
-    $isGood = $currentMode === 'good';
+    $currentMode = currentMode();
+    $isGood = isGoodMode();
 @endphp
 
 <div class="flex w-full justify-between border-b border-gray-400 bg-white p-4">
