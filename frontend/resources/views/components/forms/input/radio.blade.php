@@ -10,7 +10,7 @@
     />
 
     <div class="mt-1 flex gap-4">
-        @foreach (\App\YesNoEnum::cases() as $case)
+        @foreach (\App\Enums\YesNoEnum::cases() as $case)
             <label>
                 <input
                     type="radio"
