@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\YesNoEnum;
+use App\Enums\YesNoEnum;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 

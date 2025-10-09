@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\BadModelAction;
 use App\Http\Requests\BadRequest;
 use Illuminate\View\View;
 
@@ -19,6 +20,8 @@ class BadController extends Controller
 
     public function store(BadRequest $request): View
     {
+        app(BadModelAction::class)->execute($request);
+
         return view('bad.show');
     }
 }

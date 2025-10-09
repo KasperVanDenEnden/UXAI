@@ -20,8 +20,8 @@ class GoodController extends Controller
 
     public function store(GoodRequest $request): View
     {
-        $result = (new GoodModelAction)->execute($request);
+        app(GoodModelAction::class)->execute($request);
 
-        return view('good.show', ['result' => $result]);
+        return view('good.show');
     }
 }
