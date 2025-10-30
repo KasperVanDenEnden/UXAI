@@ -4,7 +4,7 @@
     required
 />
 <x-forms.input.radio
-    name="family_illness"
+    name="family_history"
     label="Is there anyone in your family having a hair fall problem or a baldness issue?"
     required
 />
