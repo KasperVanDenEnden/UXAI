@@ -1,0 +1,17 @@
+{
+  "coefficients": [
+    0.7737510204315186,
+    0.2378951460123062,
+    0.39017030596733093,
+    0.6359475255012512,
+    0.6418090462684631
+  ],
+  "bias": 0.6114169955253601,
+  "feature_names": [
+    "stress",
+    "water_reason",
+    "sleep_disturbance",
+    "hair_chemicals",
+    "family_history"
+  ]
+}

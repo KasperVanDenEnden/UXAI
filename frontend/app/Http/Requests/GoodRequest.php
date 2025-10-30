@@ -19,7 +19,7 @@ class GoodRequest extends FormRequest
             'anemia' => ['required', 'string', Rule::enum(YesNoEnum::class)],
             'stress' => ['required', 'string', Rule::enum(YesNoEnum::class)],
             'chronic_illness' => ['required', 'string', Rule::enum(YesNoEnum::class)],
-            'family_illness' => ['required', 'string', Rule::enum(YesNoEnum::class)],
+            'family_history' => ['required', 'string', Rule::enum(YesNoEnum::class)],
         ];
     }
 }
